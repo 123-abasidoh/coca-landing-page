@@ -97,7 +97,7 @@ nav ul li a:hover {
 #home {
   margin: 70px 0;
 }
-#home p{
+#home p {
   max-width: 430px;
 }
 .row {
@@ -225,7 +225,6 @@ nav ul li a:hover {
 /* -----------------------blog2-------------------- */
 .blog2 p {
   text-align: end;
-  padding-top: 20px;
 }
 .blog2 {
   background-color: var(--aqua);
@@ -235,8 +234,11 @@ nav ul li a:hover {
 .blog2 h2 {
   font-size: 40px;
 }
-.blog1 .row {
-  /* align-items: center; */
+.Perfect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* -----------------------blog3-------------------- */
@@ -319,7 +321,7 @@ footer {
 }
 .newsletter {
   display: flex;
-  min-width: 10px;
+  /* min-width: 10px; */
   justify-content: space-between;
   padding-top: 20px;
   flex-wrap: wrap;
@@ -388,6 +390,9 @@ form {
   body {
     /* background-color: red; */
   }
+  h2 ,h1 {
+    font-size: 20px;
+  }
   nav {
     position: relative;
     position: fixed;
@@ -452,7 +457,10 @@ form {
     text-align: center;
   }
   .Perfect {
-    text-align: start;
+    text-align: center;
+  }
+  .Perfect p {
+    text-align: center;
   }
   .fixednav {
     backdrop-filter: blur(10px);
@@ -464,5 +472,13 @@ form {
     width: 100%;
     height: 50px;
     background-color: hsla(30, 3%, 88%, 0.617);
+  }
+  .newsletter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  #home .container .row .home-col-1 p {
+    width: 100%;
   }
 }
